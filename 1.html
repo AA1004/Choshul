@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="chobody.css">
+  <title>좋아하기 - 초슐</title>
+  <meta charset="utf-8">
+</head>
+<script>
+//cho라는 함수를 선언하고 작동함
+const cho = function () {
+    let num = Math.random();
+    if(num >= 0.5){
+        alert('초슐은 나를 좋아해요!')
+    } else {
+        alert('초슐은 나를 싫어해요!')
+    let num = Math.random();
+        }
+    }   
+
+
+</script>
+<body>
+  <h1><a href="index.html">로비</a></h1>
+  <ol>
+    <li><a href="1.html">좋아하기</a></li>
+    <li><a href="2.html">닉정하기</a></li>
+    <li><a href="3.html">미정</a></li>
+  </ol>
+  <h1>초슐 슐렛</h1>
+    
+  <button onclick="doAction()">초슐은 나를 좋아하는가?</button>
+
+  <script>
+      function doAction() {
+          cho()
+      }
+  </script>
+</body>
+</html>

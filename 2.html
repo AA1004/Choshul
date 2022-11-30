@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="chobody.css">
+  <title>닉정하기 - 초슐</title>
+  <meta charset="utf-8">
+</head>
+<script>
+//cho라는 함수를 선언하고 작동함
+const cho = function () {
+    let num = Math.random();
+    if (num === 1) {
+        alert('츄젤')
+    } else if (0.8 <= num) {
+        alert('나로')
+    } else if (0.6 <= num) {
+        alert('샤모')
+    } else if (0.4 <= num) {
+        alert('메헴')
+    } else if (0.2 <= num) {
+        alert('온율')
+    } else {
+        alert('가든')
+    }
+}
+        
+</script>
+<body>
+  <h1><a href="index.html">로비</a></h1>
+  <ol>
+    <li><a href="1.html">좋아하기</a></li>
+    <li><a href="2.html">닉정하기</a></li>
+    <li><a href="3.html">미정</a></li>
+  </ol>
+  <h1>초슐 닉정하기</h1>
+    
+  <button onclick="doAction()">1회 뽑기</button>
+
+  <script>
+      function doAction() {
+          cho()
+      }
+  </script>
+
+
+  <button onclick="doAction1()">10회 뽑기</button>
+
+  <script>
+      function doAction1() {
+          cho()
+          cho()
+          cho()
+          cho()
+          cho()
+          cho()
+          cho()
+          cho()
+          cho()
+          cho()
+      }
+  </script>
+</body>
+</html>
